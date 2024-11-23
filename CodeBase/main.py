@@ -10,7 +10,13 @@ print(torch.cuda.is_available())
 
 def main():
     # Paths
+    # image dir for colab/drive dataset
     #images_dir = "/content/drive/MyDrive/MOCHEG/extracted/mocheg/train/images"  # Update with your images folder path
+    # images_dir = "/content/drive/MyDrive/MOCHEG/extracted/mocheg/images"
+    # corpus_csv = "/content/drive/MyDrive/MOCHEG/extracted/mocheg/train/Corpus2.csv"  # Update with your text CSV path
+    # img_evidence_csv = "/content/drive/MyDrive/MOCHEG/extracted/mocheg/train/img_evidence_qrels.csv"
+
+    # images_dir for local dataset
     images_dir = "/content/drive/MyDrive/MOCHEG/extracted/mocheg/images"
     corpus_csv = "/content/drive/MyDrive/MOCHEG/extracted/mocheg/train/Corpus2.csv"  # Update with your text CSV path
     img_evidence_csv = "/content/drive/MyDrive/MOCHEG/extracted/mocheg/train/img_evidence_qrels.csv"
