@@ -1,0 +1,9 @@
+# Ignore COSMOS and MOCHEG directories
+COSMOS/
+MOCHEG/
+
+# Ignore MOCHEG.txt file
+MOCHEG.txt
+
+# Ignore myenv directory
+myenv/
