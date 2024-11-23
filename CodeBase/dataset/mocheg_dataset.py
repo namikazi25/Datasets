@@ -3,6 +3,7 @@ import pandas as pd
 from PIL import Image
 import torch
 from torch.utils.data import Dataset
+from torchvision import transforms
 
 class MochegDataset(Dataset):
     """
@@ -21,7 +22,8 @@ class MochegDataset(Dataset):
         self.images_dir = images_dir
         self.img_evidence_data = pd.read_csv(img_evidence_csv)
         self.corpus_data = pd.read_csv(corpus_csv)
-        self.transform = transform
+        self.transform = transform or transforms.ToTensor()  # Default to tensor conversion
+
 
         # Merge data based on TOPIC/claim_id
         self.data = self._prepare_data()
